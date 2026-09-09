@@ -30,9 +30,9 @@ while ($gandalf->isAlive() && $sauron->isAlive()) {
 
 echo "<br>--------------------------<br><br>";
 
-// Annonce le gagnant final
+// Annonce le gagnant final (getName() car $name est private dans Warrior)
 if ($gandalf->isAlive()) {
-    echo "<b>{$gandalf->name} a gagné !!</b>";
+    echo "<b>{$gandalf->getName()} a gagné !!</b>";
 } else {
-    echo "<b>{$sauron->name} a gagné !!</b>";
+    echo "<b>{$sauron->getName()} a gagné !!</b>";
 }
